@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+body{
+    font-family: 'Bungee', cursive;
+    
+}
+.title-span{
+    color: rgb(87, 0, 169);
+}
+.bg-navbar{
+    background-color: #d5a8ff;
+}

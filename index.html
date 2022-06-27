@@ -15,11 +15,11 @@
 </head>
 
 <body>
-    <!-------------------------------------------------->
+
     <!-- ENCABEZADO -->
-    <!-------------------------------------------------->
-    <header class="">
-        <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-navbar" id="menu">
             <div class="container-fluid">
                 <a class="navbar-brand text-light fs-1 fw-bold" href="./index.html">
                     <span class="title-span">A</span>Q<span class="title-span">U</span>A</a>
@@ -28,6 +28,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse d-flex-navbar" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -46,113 +47,84 @@
                             <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="email" placeholder="Correo electronico" aria-label="email">
-                        <button class="btn btn-outline-success" type="button">Search</button>
-                    </form> -->
+
                 </div>
+
             </div>
         </nav>
     </header>
-    <!-------------------------------------------------->
-    <!-- MAIN -->
-    <!-------------------------------------------------->
+
+    <!-- MAIN-->
 
 
-    <section class="section">
-        <article class="w-75 mx-auto text-center">
-
-            <h3 class="titulo__article">Quienes somos?</h3>
-
-            <p class="contenido__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere enim
-                amet fugiat repellat, perspiciatis necessitatibus, velit mollitia, repudiandae nam odio cupiditate
-                expedita ab commodi. Alias corrupti accusantium dolorum non asperiores voluptatibus magni sit quas,
-                nemo atque. Ratione cumque ipsa nam atque est. Repudiandae animi sequi praesentium autem at iusto
-                possimus. Aut fuga culpa saepe nisi accusantium. Voluptates distinctio qui nostrum repellat iusto
-                dolores dignissimos magni vel omnis aperiam iste nihil atque, harum velit, nobis accusantium debitis
-                fuga. Sunt error est dolores aut natus numquam ducimus illum, provident beatae voluptates, minima
-                repudiandae laborum </p>
-        </article>
-
-
-        <article class="w-100 mx-auto text-center">
-            <h3>Especialidades</h3>
-            <!-------------------------------------------------->
-            <!-- SLIDER -->
-            <!-------------------------------------------------->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/slider1.jpg" class="d-block w-100" alt="especialidad1">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="./img/slider2.jpg" class="d-block w-100" alt="especialidad2">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="./img/slider3.jpg" class="d-block w-100" alt="especialidad3">
-                    </div>
-
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </article>
-
-
-        <article class="w-50 mx-auto text-center">
-            <h3>Ubicación</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.435946764354!2d-60.64173521558218!3d-32.96589842825314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aba855da56c7%3A0x2322b13f0c5f4963!2sBuenos%20Aires%202366%2C%20S2000%20FQT%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1653668177325!5m2!1ses-419!2sar"
-                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                class="article-ubicacion"></iframe>
-        </article>
+    <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+        id="intro">
+        <h2 class="p-3 fs-2 border-3">Quienes Somos?</h2>
+        <p class="p-3  fs-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas eius ut eveniet a ratione architecto
+            rem iste quo, placeat neque nobis nihil incidunt, ipsam maxime debitis, saepe error reprehenderit.
+        </p>
     </section>
 
+    <!-- SLIDER DE IMAGENES-->
+    <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+        id="intro">
+        <h2 class="p-3 fs-2 border-3">ESPECIALIDADES</h2>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./img/slider1.jpg" class="d-block w-100" alt="">
+                </div>
 
 
-    <footer class="pie-pagina">
-        <div class="section__footer">
-            <h4>CONTACTO</h4>
-            <ul>
-                <li>Buenos Aires 2366, Rosario</li>
-                <li>+54(341)3300051</li>
-                <li>pasteleriadeppen@coderhouse.com</li>
-            </ul>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/slider2.jpg" class="d-block w-100" alt="...">
+                </div>
+
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/slider3.jpg" class="d-block w-100" alt="...">
+                </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        
-        <div class="menu__footer">
-            <h4>MENU</h4>
-            <ul>
-                <li><a href="../index.html" class="nav-link">Inicio</a></li>
-                <li><a href="./quienessomos.html" class="nav-link">Quienes Somos</a></li>
-                <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
-                <li><a href="./galeria.html" class="nav-link">Galeria</a></li>
-                <li><a href="./tarifas.html" class="nav-link">Tarifas</a></li>
-                <li><a href="./pages/tabla.html" class="nav-link">Tabla</a></li>
-            </ul>
+    </section>
+
+    <!-- SECCION ACERCA DE NOSOTROS-->
+
+
+    <section>
+        <div class="container w-50 m-auto text-center" id="equipo">
+            <h2 class="mb-5 fs-2">UBICACION</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.435946764354!2d-60.64173521558218!3d-32.96589842825314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aba855da56c7%3A0x2322b13f0c5f4963!2sBuenos%20Aires%202366%2C%20S2000%20FQT%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1653668177325!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="contenido__article"></iframe>
         </div>
-        <div class="redes__footer">
-            <a href=""></a>
-            <h4>REDES</h4>
+    </section>
+
+    <!--FOOTER-->
+
+    <footer>
+        <div>
+            <h3>Redes</h3>
             <ul>
-                <li><a href="https://instagram.com/jeree_ramos/" class="logo-instagram" target="_blank">
+                <li><a href="https://instagram.com/jeree_ramos/" class="logo" target="_blank">
                         <img src="./img/instagram.png" alt="logo de instagram" width="30"></li></a>
 
-                <li><a href="https://www.facebook.com/profile.php?id=100009404740121" class="logo-facebook"
-                        target="_blank">
+                <li><a href="https://www.facebook.com/profile.php?id=100009404740121" class="logo" target="_blank">
                         <img src="./img/facebook.png" alt="logo de facebook" width="30"></li></a>
 
-                <li><a href="https://twitter.com/JerExZ13" class="logo-twitter" target="_blank">
+                <li><a href="https://twitter.com/JerExZ13" class="logo" target="_blank">
                         <img src="./img/twitter.png" alt="logo de twitter" width="30"></a></li>
 
                 <li><a href="https://www.youtube.com/channel/UCQdajP34r8NprzeRT25T0CA" class=logo-youtube
@@ -163,11 +135,11 @@
         </div>
     </footer>
 
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

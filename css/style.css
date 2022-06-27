@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,38 +6,61 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
-body{
+body {
     font-family: 'Bungee', cursive;
     overflow-x: hidden;
     background-color: #e4c7ff;
-    
 }
 
-/* GRID */
+/* PRUEBAS */
+.menu li a {
+    display: flex;
+    color: #41a9ff;
+    text-decoration: none;
+    padding: 0px 20px;
+    text-align: center;
+
+}
+
+.menu .active {
+    color: #ff55e3;
+}
+
+.menu a:hover {
+    background-color: #d041ff74;
+    color: #ffffff;
+    transition: ease-in .2s;
+}
+
+
+
 
 
 /* NAVBAR */
 
-.title-span{
+.title-span {
     color: rgb(87, 0, 169);
 }
-.bg-navbar{
-    background-color: #d5a8ff;
+
+.bg-navbar {
+    background-color: #c281ff;
 }
-.d-flex-navbar{
+
+.d-flex-navbar {
     display: flex;
     justify-content: center;
-    
+
 }
+
 /* MAIN */
 
 /* SLIDER */
-.carouser-inner{
-    max-height: 39rem;  
+.carouser-inner {
+    max-height: 39rem;
 }
 
 /* UBICACION */
-.article-ubicacion{
+.article-ubicacion {
     width: 100%;
 }
 
@@ -46,10 +69,16 @@ body{
 
 footer {
     background-color: #c281ff;
-    min-height: 100px;;
+    min-height: 100px;
+    ;
 }
-.logo{
-    list-style: none;
-    text-decoration: none;
+footer p{
+    color: #ffffff;
+    text-align: center;
 }
 
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: #ffffff;
+}

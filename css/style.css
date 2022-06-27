@@ -12,7 +12,7 @@ body {
     background-color: #e4c7ff;
 }
 
-/* PRUEBAS */
+/*=========================PRUEBAS================================*/
 .menu li a {
     display: flex;
     color: #41a9ff;
@@ -32,11 +32,7 @@ body {
     transition: ease-in .2s;
 }
 
-
-
-
-
-/* NAVBAR */
+/*=========================NAVBAR================================*/
 
 .title-span {
     color: rgb(87, 0, 169);
@@ -52,18 +48,30 @@ body {
 
 }
 
-/* MAIN */
+/*=========================MAIN================================*/
 
-/* SLIDER */
+/*=========================SLIDER================================*/
 .carouser-inner {
     max-height: 39rem;
 }
 
-/* UBICACION */
+/*=========================UBICACION================================*/
 .article-ubicacion {
     width: 100%;
 }
+/*=========================GALERIA================================*/
+#galeria .col-lg-4 {
+    margin: 0;
+    padding: 25px;
+}
+#galeria img{
+    width: 100%;
+    height: 300px ;
+}
 
+#galeria img:hover{
+    border: 5px solid #ffffff;
+}
 
 /*=========================FOOTER================================*/
 
